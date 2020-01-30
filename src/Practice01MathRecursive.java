@@ -1,5 +1,5 @@
-class Practice01MathRecursive implements Practice01Math{
-	public int finb(int n) throws Exception{
+public class Practice01MathRecursive implements Practice01Math{
+	public int fib(int n) throws Exception{
 		if(n==0){
 			return 0;
 		}
@@ -9,7 +9,7 @@ class Practice01MathRecursive implements Practice01Math{
 		if(n<0){
 			throw new IllegalArgumentException("Please enter a positive number");
 		}
-		return fib(n-1)+fib(m-2);
+		return fib(n-1)+fib(n-2);
 	}
 	public int fact(int n) throws Exception{
 		if(n<0){
@@ -20,4 +20,5 @@ class Practice01MathRecursive implements Practice01Math{
 		}
 		else
 			return 1;
+	}
 }
